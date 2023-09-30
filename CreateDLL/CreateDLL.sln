@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CreateDLL", "CreateDLL\Crea
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MainMFC", "MainMFC\MainMFC.vcxproj", "{016BCED3-9BCC-4010-B347-CAD796A1368A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CreateDLL2", "CreateDLL2\CreateDLL2.vcxproj", "{8D540B43-41C8-4EAF-9DD0-EA36C6F57B4B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{016BCED3-9BCC-4010-B347-CAD796A1368A}.Release|x64.Build.0 = Release|x64
 		{016BCED3-9BCC-4010-B347-CAD796A1368A}.Release|x86.ActiveCfg = Release|Win32
 		{016BCED3-9BCC-4010-B347-CAD796A1368A}.Release|x86.Build.0 = Release|Win32
+		{8D540B43-41C8-4EAF-9DD0-EA36C6F57B4B}.Debug|x64.ActiveCfg = Debug|x64
+		{8D540B43-41C8-4EAF-9DD0-EA36C6F57B4B}.Debug|x64.Build.0 = Debug|x64
+		{8D540B43-41C8-4EAF-9DD0-EA36C6F57B4B}.Debug|x86.ActiveCfg = Debug|Win32
+		{8D540B43-41C8-4EAF-9DD0-EA36C6F57B4B}.Debug|x86.Build.0 = Debug|Win32
+		{8D540B43-41C8-4EAF-9DD0-EA36C6F57B4B}.Release|x64.ActiveCfg = Release|x64
+		{8D540B43-41C8-4EAF-9DD0-EA36C6F57B4B}.Release|x64.Build.0 = Release|x64
+		{8D540B43-41C8-4EAF-9DD0-EA36C6F57B4B}.Release|x86.ActiveCfg = Release|Win32
+		{8D540B43-41C8-4EAF-9DD0-EA36C6F57B4B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

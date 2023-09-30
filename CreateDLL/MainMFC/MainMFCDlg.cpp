@@ -9,7 +9,10 @@
 #include "afxdialogex.h"
 
 #include "../CreateDLL/MyDLL.h";
-#pragma comment (lib,"../x64/Debug/CreateDLL.lib");
+#pragma comment (lib,"../x64/Debug/CreateDLL.lib")
+#pragma comment (lib,"../x64/Debug/CreateDLL2.lib")
+
+typedef double (*DLL_SUM)(double a, double b);
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -78,6 +81,18 @@ BOOL CMainMFCDlg::OnInitDialog()
 	CDialogEx::OnInitDialog();
 
 	Person person1("홍길동", 35, "서울시");
+	person1.ShowInfo();
+
+	std::string path = "..//x64//Debug//CreateDLL2.dll";
+	HMODULE hDll = ::LoadLibraryA(path.c_str());
+	if (hDll != NULL)
+	{
+		DLL_SUM pFunc = (DLL_SUM)::GetProcAddress(hDll, "Sum");
+		double ret = pFunc(5.0, 7.0);
+		std::cout << "Result: " << ret << std::endl;
+
+		::FreeLibrary(hDll);
+	}
 
 	return TRUE;  // 포커스를 컨트롤에 설정하지 않으면 TRUE를 반환합니다.
 }
